@@ -1,0 +1,140 @@
+body {
+    background-color: #dfe3ee;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    background-color: #8b9dc3;
+    width: 97%;
+    max-width: 620px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.weather-results {
+    background-color: #f7f7f7;
+    width: 90%;
+    max-width: 600px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.weather-icon {
+    width: 50px;
+    background-color: #dfe3ee;
+    border-radius: 10px;
+}
+
+.weather-icon-forecast {
+    width: 50px;
+    background-color: #dfe3ee;
+    border-radius: 10px;
+}
+
+.temp {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.temp-forecast {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.secondary-box {
+    display: flex;
+}
+
+.pressure {
+    border-right: 1px solid #8b9dc3;
+}
+
+.humidity {
+    border-right: 1px solid #8b9dc3;
+}
+
+.wind-speed {
+    border-right: 1px solid #8b9dc3;
+}
+
+.wind-deg {
+    border-right: 1px solid #8b9dc3;
+}
+
+.pressure-forecast {
+    border-right: 1px solid #8b9dc3;
+}
+
+.humidity-forecast {
+    border-right: 1px solid #8b9dc3;
+}
+
+.wind-speed-forecast {
+    border-right: 1px solid #8b9dc3;
+}
+
+.wind-deg-forecast {
+    border-right: 1px solid #8b9dc3;
+}
+
+.dropbtn {
+    font-weight: bold;
+    background-color: #8b9dc3;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.dropbtn:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.2s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 133px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 30px;
+    border-radius: 15px;
+    border: none;
+    font-size: medium;
+}
+
+.dropdown-content button:hover {
+    background-color: #dfe3ee;
+}
+
+.show {
+    display: block;
+}
+
+@media only screen and (max-width: 400px) {
+    p {
+        font-size: smaller;
+    }
+}

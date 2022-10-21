@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Thessaloniki Weather App</title>
+</head>
+
+<body>
+    <h1>Thessaloniki Weather App</h1>
+    <div class="weather-results">
+        <h2>Current weather</h2>
+        <img class="weather-icon" />
+        <p class="temp"></p>
+        <p class="feels-like"></p>
+        <div class="secondary-box">
+            <p class="pressure"></p>
+            <p class="humidity"></p>
+            <p class="wind-speed"></p>
+            <p class="wind-deg"></p>
+            <p class="clouds"></p>
+        </div>
+    </div>
+
+    <div class="weather-results">
+        <div class="dropdown">
+            <h2>7-day forecast</h2>
+            <button onclick="dropdownForecast()" class="dropbtn">Choose date</button>
+            <div id="myDropdown" class="dropdown-content">
+                <button onclick="weatherForecast(1)" id="forecast-btn1"></button>
+                <button onclick="weatherForecast(2)" id="forecast-btn2"></button>
+                <button onclick="weatherForecast(3)" id="forecast-btn3"></button>
+                <button onclick="weatherForecast(4)" id="forecast-btn4"></button>
+                <button onclick="weatherForecast(5)" id="forecast-btn5"></button>
+                <button onclick="weatherForecast(6)" id="forecast-btn6"></button>
+                <button onclick="weatherForecast(7)" id="forecast-btn7"></button>
+            </div>
+        </div>
+        <p></p>
+        <img class="weather-icon-forecast" />
+        <p class="temp-forecast"></p>
+        <p class="feels-like-forecast"></p>
+        <div class="secondary-box">
+            <p class="pressure-forecast"></p>
+            <p class="humidity-forecast"></p>
+            <p class="wind-speed-forecast"></p>
+            <p class="wind-deg-forecast"></p>
+            <p class="clouds-forecast"></p>
+        </div>
+    </div>
+    <div class="weather-results">
+        <h2>Max temperatures in the next 7 days</h2>
+        <canvas id="lineChart" style="width:100%;max-width:700px"></canvas>
+    </div>
+</body>
+
+</html>
